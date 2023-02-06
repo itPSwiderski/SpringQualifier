@@ -1,7 +1,9 @@
 package pl.sda.springqualifier.config;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.Profile;
 import pl.sda.springqualifier.service.DogService;
 
 @org.springframework.context.annotation.Configuration
@@ -9,7 +11,11 @@ import pl.sda.springqualifier.service.DogService;
 public class Configuration {
 
     @Bean
-    DogService dogService(){
+    @Profile("Pies")
+    public DogService dogService() {
         return new DogService();
     }
+
+
+
 }

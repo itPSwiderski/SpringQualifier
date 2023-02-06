@@ -7,9 +7,9 @@ import pl.sda.newpackage.interfaces.Language;
 @Controller
 public class LanguageController {
 
-    private Language language;
+    private final Language language;
 
-    public LanguageController(@Qualifier("enLanguage") Language language) {
+    public LanguageController(@Qualifier("languages") Language language) {
         this.language = language;
     }
 

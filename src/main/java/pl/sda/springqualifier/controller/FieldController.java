@@ -9,7 +9,7 @@ import pl.sda.newpackage.interfaces.Language;
 public class FieldController {
 
     @Autowired
-    @Qualifier("enLanguage")
+    @Qualifier("languages")
     private Language language;
 
     public   String sayGreeting(){

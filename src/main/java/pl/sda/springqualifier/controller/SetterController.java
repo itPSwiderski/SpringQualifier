@@ -11,7 +11,7 @@ public class SetterController {
     private Language language;
 
     @Autowired
-    @Qualifier("esLanguage")
+    @Qualifier("languages")
     public void setLanguage(Language language) {
         this.language = language;
     }
